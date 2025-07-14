@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherNow 🌤</title>
+  <link rel="stylesheet" href="task5.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="weather-app">
+      <h1>WeatherNow 🌦️</h1>
+      <div class="search-box">
+        <input type="text" id="locationInput" placeholder="Enter city (e.g., Kolkata,IN)" />
+        <button onclick="getWeather()">Get Weather</button>
+      </div>
+      <div id="weatherResult" class="weather-card hidden">
+        <h2 id="cityName"></h2>
+        <p id="description"></p>
+        <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+        <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        <p><strong>Wind:</strong> <span id="wind"></span> km/h</p>
+      </div>
+    </div>
+  </div>
+  <script src="task5.js"></script>
+</body>
+</html>
